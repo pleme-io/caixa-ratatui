@@ -4113,6 +4113,33 @@
           "uses_default_features": false,
           "optional": false,
           "target": "aarch64-linux-android"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(all(target_arch = \"aarch64\", target_os = \"linux\"))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(all(target_arch = \"aarch64\", target_vendor = \"apple\"))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(all(target_arch = \"loongarch64\", target_os = \"linux\"))"
         }
       ],
       "runtime_dependencies": [
@@ -4124,6 +4151,33 @@
           "uses_default_features": false,
           "optional": false,
           "target": "aarch64-linux-android"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(all(target_arch = \"aarch64\", target_os = \"linux\"))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(all(target_arch = \"aarch64\", target_vendor = \"apple\"))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(all(target_arch = \"loongarch64\", target_os = \"linux\"))"
         }
       ],
       "build_dependencies": [],
@@ -6749,7 +6803,10 @@
       "proc_macro": true,
       "build_script": null,
       "binaries": [],
-      "lib_target": null,
+      "lib_target": {
+        "name": "document_features",
+        "path": "lib.rs"
+      },
       "dependencies": [
         {
           "name": "litrs",
@@ -7639,6 +7696,24 @@
           "uses_default_features": false,
           "optional": false,
           "target": "cfg(unix)"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(target_os = \"hermit\")"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(target_os = \"wasi\")"
         }
       ],
       "runtime_dependencies": [
@@ -7650,6 +7725,24 @@
           "uses_default_features": false,
           "optional": false,
           "target": "cfg(unix)"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(target_os = \"hermit\")"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(target_os = \"wasi\")"
         }
       ],
       "build_dependencies": [],
@@ -9465,6 +9558,69 @@
           "uses_default_features": false,
           "optional": false,
           "target": "cfg(all(any(target_os = \"linux\", target_os = \"android\"), not(any(all(target_os = \"linux\", target_env = \"\"), getrandom_backend = \"custom\", getrandom_backend = \"linux_raw\", getrandom_backend = \"rdrand\", getrandom_backend = \"rndr\"))))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(any(target_os = \"dragonfly\", target_os = \"freebsd\", target_os = \"hurd\", target_os = \"illumos\", target_os = \"cygwin\", all(target_os = \"horizon\", target_arch = \"arm\")))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(any(target_os = \"haiku\", target_os = \"redox\", target_os = \"nto\", target_os = \"aix\"))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(any(target_os = \"ios\", target_os = \"visionos\", target_os = \"watchos\", target_os = \"tvos\"))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(any(target_os = \"macos\", target_os = \"openbsd\", target_os = \"vita\", target_os = \"emscripten\"))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(target_os = \"netbsd\")"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(target_os = \"solaris\")"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(target_os = \"vxworks\")"
         }
       ],
       "runtime_dependencies": [
@@ -9485,6 +9641,69 @@
           "uses_default_features": false,
           "optional": false,
           "target": "cfg(all(any(target_os = \"linux\", target_os = \"android\"), not(any(all(target_os = \"linux\", target_env = \"\"), getrandom_backend = \"custom\", getrandom_backend = \"linux_raw\", getrandom_backend = \"rdrand\", getrandom_backend = \"rndr\"))))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(any(target_os = \"dragonfly\", target_os = \"freebsd\", target_os = \"hurd\", target_os = \"illumos\", target_os = \"cygwin\", all(target_os = \"horizon\", target_arch = \"arm\")))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(any(target_os = \"haiku\", target_os = \"redox\", target_os = \"nto\", target_os = \"aix\"))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(any(target_os = \"ios\", target_os = \"visionos\", target_os = \"watchos\", target_os = \"tvos\"))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(any(target_os = \"macos\", target_os = \"openbsd\", target_os = \"vita\", target_os = \"emscripten\"))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(target_os = \"netbsd\")"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(target_os = \"solaris\")"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(target_os = \"vxworks\")"
         }
       ],
       "build_dependencies": [],
@@ -9535,6 +9754,69 @@
           "target": "cfg(all(any(target_os = \"linux\", target_os = \"android\"), not(any(all(target_os = \"linux\", target_env = \"\"), getrandom_backend = \"custom\", getrandom_backend = \"linux_raw\", getrandom_backend = \"rdrand\", getrandom_backend = \"rndr\"))))"
         },
         {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(any(target_os = \"dragonfly\", target_os = \"freebsd\", target_os = \"hurd\", target_os = \"illumos\", target_os = \"cygwin\", all(target_os = \"horizon\", target_arch = \"arm\")))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(any(target_os = \"haiku\", target_os = \"redox\", target_os = \"nto\", target_os = \"aix\"))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(any(target_os = \"ios\", target_os = \"visionos\", target_os = \"watchos\", target_os = \"tvos\"))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(any(target_os = \"macos\", target_os = \"openbsd\", target_os = \"vita\", target_os = \"emscripten\"))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(target_os = \"netbsd\")"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(target_os = \"solaris\")"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(target_os = \"vxworks\")"
+        },
+        {
           "name": "rand_core",
           "package_key": "rand_core-0.10.0",
           "kind": "normal",
@@ -9562,6 +9844,69 @@
           "uses_default_features": false,
           "optional": false,
           "target": "cfg(all(any(target_os = \"linux\", target_os = \"android\"), not(any(all(target_os = \"linux\", target_env = \"\"), getrandom_backend = \"custom\", getrandom_backend = \"linux_raw\", getrandom_backend = \"rdrand\", getrandom_backend = \"rndr\"))))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(any(target_os = \"dragonfly\", target_os = \"freebsd\", target_os = \"hurd\", target_os = \"illumos\", target_os = \"cygwin\", all(target_os = \"horizon\", target_arch = \"arm\")))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(any(target_os = \"haiku\", target_os = \"redox\", target_os = \"nto\", target_os = \"aix\"))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(any(target_os = \"ios\", target_os = \"visionos\", target_os = \"watchos\", target_os = \"tvos\"))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(any(target_os = \"macos\", target_os = \"openbsd\", target_os = \"vita\", target_os = \"emscripten\"))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(target_os = \"netbsd\")"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(target_os = \"solaris\")"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(target_os = \"vxworks\")"
         },
         {
           "name": "rand_core",
@@ -14352,6 +14697,24 @@
           "target": "cfg(unix)"
         },
         {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": true,
+          "optional": false,
+          "target": "cfg(target_os = \"hermit\")"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": true,
+          "optional": false,
+          "target": "cfg(target_os = \"wasi\")"
+        },
+        {
           "name": "log",
           "package_key": "log-0.4.27",
           "kind": "normal",
@@ -14370,6 +14733,24 @@
           "uses_default_features": true,
           "optional": false,
           "target": "cfg(unix)"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": true,
+          "optional": false,
+          "target": "cfg(target_os = \"hermit\")"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": true,
+          "optional": false,
+          "target": "cfg(target_os = \"wasi\")"
         },
         {
           "name": "log",
@@ -21737,6 +22118,15 @@
           "target": "cfg(all(all(target_arch = \"aarch64\", target_endian = \"little\"), target_vendor = \"apple\", any(target_os = \"ios\", target_os = \"macos\", target_os = \"tvos\", target_os = \"visionos\", target_os = \"watchos\")))"
         },
         {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(all(any(all(target_arch = \"aarch64\", target_endian = \"little\"), all(target_arch = \"arm\", target_endian = \"little\")), any(target_os = \"android\", target_os = \"linux\")))"
+        },
+        {
           "name": "untrusted",
           "package_key": "untrusted-0.9.0",
           "kind": "normal",
@@ -21773,6 +22163,15 @@
           "uses_default_features": false,
           "optional": false,
           "target": "cfg(all(all(target_arch = \"aarch64\", target_endian = \"little\"), target_vendor = \"apple\", any(target_os = \"ios\", target_os = \"macos\", target_os = \"tvos\", target_os = \"visionos\", target_os = \"watchos\")))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": false,
+          "target": "cfg(all(any(all(target_arch = \"aarch64\", target_endian = \"little\"), all(target_arch = \"arm\", target_endian = \"little\")), any(target_os = \"android\", target_os = \"linux\")))"
         },
         {
           "name": "untrusted",
@@ -22546,6 +22945,24 @@
           "target": "cfg(all(not(rustix_use_libc), not(miri), target_os = \"linux\", any(target_endian = \"little\", any(target_arch = \"s390x\", target_arch = \"powerpc\")), any(target_arch = \"arm\", all(target_arch = \"aarch64\", target_pointer_width = \"64\"), target_arch = \"riscv64\", all(rustix_use_experimental_asm, target_arch = \"powerpc\"), all(rustix_use_experimental_asm, target_arch = \"powerpc64\"), all(rustix_use_experimental_asm, target_arch = \"s390x\"), all(rustix_use_experimental_asm, target_arch = \"mips\"), all(rustix_use_experimental_asm, target_arch = \"mips32r6\"), all(rustix_use_experimental_asm, target_arch = \"mips64\"), all(rustix_use_experimental_asm, target_arch = \"mips64r6\"), target_arch = \"x86\", all(target_arch = \"x86_64\", target_pointer_width = \"64\"))))"
         },
         {
+          "name": "libc_errno",
+          "package_key": "errno-0.3.13",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": true,
+          "target": "cfg(all(not(windows), any(rustix_use_libc, miri, not(all(target_os = \"linux\", any(target_endian = \"little\", any(target_arch = \"s390x\", target_arch = \"powerpc\")), any(target_arch = \"arm\", all(target_arch = \"aarch64\", target_pointer_width = \"64\"), target_arch = \"riscv64\", all(rustix_use_experimental_asm, target_arch = \"powerpc\"), all(rustix_use_experimental_asm, target_arch = \"powerpc64\"), all(rustix_use_experimental_asm, target_arch = \"s390x\"), all(rustix_use_experimental_asm, target_arch = \"mips\"), all(rustix_use_experimental_asm, target_arch = \"mips32r6\"), all(rustix_use_experimental_asm, target_arch = \"mips64\"), all(rustix_use_experimental_asm, target_arch = \"mips64r6\"), target_arch = \"x86\", all(target_arch = \"x86_64\", target_pointer_width = \"64\")))))))"
+        },
+        {
+          "name": "libc_errno",
+          "package_key": "errno-0.3.13",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": true,
+          "target": "cfg(windows)"
+        },
+        {
           "name": "libc",
           "package_key": "libc-0.2.175",
           "kind": "normal",
@@ -22553,6 +22970,15 @@
           "uses_default_features": false,
           "optional": true,
           "target": "cfg(all(not(rustix_use_libc), not(miri), target_os = \"linux\", any(target_endian = \"little\", any(target_arch = \"s390x\", target_arch = \"powerpc\")), any(target_arch = \"arm\", all(target_arch = \"aarch64\", target_pointer_width = \"64\"), target_arch = \"riscv64\", all(rustix_use_experimental_asm, target_arch = \"powerpc\"), all(rustix_use_experimental_asm, target_arch = \"powerpc64\"), all(rustix_use_experimental_asm, target_arch = \"s390x\"), all(rustix_use_experimental_asm, target_arch = \"mips\"), all(rustix_use_experimental_asm, target_arch = \"mips32r6\"), all(rustix_use_experimental_asm, target_arch = \"mips64\"), all(rustix_use_experimental_asm, target_arch = \"mips64r6\"), target_arch = \"x86\", all(target_arch = \"x86_64\", target_pointer_width = \"64\"))))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": true,
+          "target": "cfg(all(not(windows), any(rustix_use_libc, miri, not(all(target_os = \"linux\", any(target_endian = \"little\", any(target_arch = \"s390x\", target_arch = \"powerpc\")), any(target_arch = \"arm\", all(target_arch = \"aarch64\", target_pointer_width = \"64\"), target_arch = \"riscv64\", all(rustix_use_experimental_asm, target_arch = \"powerpc\"), all(rustix_use_experimental_asm, target_arch = \"powerpc64\"), all(rustix_use_experimental_asm, target_arch = \"s390x\"), all(rustix_use_experimental_asm, target_arch = \"mips\"), all(rustix_use_experimental_asm, target_arch = \"mips32r6\"), all(rustix_use_experimental_asm, target_arch = \"mips64\"), all(rustix_use_experimental_asm, target_arch = \"mips64r6\"), target_arch = \"x86\", all(target_arch = \"x86_64\", target_pointer_width = \"64\")))))))"
         }
       ],
       "runtime_dependencies": [
@@ -22575,6 +23001,24 @@
           "target": "cfg(all(not(rustix_use_libc), not(miri), target_os = \"linux\", any(target_endian = \"little\", any(target_arch = \"s390x\", target_arch = \"powerpc\")), any(target_arch = \"arm\", all(target_arch = \"aarch64\", target_pointer_width = \"64\"), target_arch = \"riscv64\", all(rustix_use_experimental_asm, target_arch = \"powerpc\"), all(rustix_use_experimental_asm, target_arch = \"powerpc64\"), all(rustix_use_experimental_asm, target_arch = \"s390x\"), all(rustix_use_experimental_asm, target_arch = \"mips\"), all(rustix_use_experimental_asm, target_arch = \"mips32r6\"), all(rustix_use_experimental_asm, target_arch = \"mips64\"), all(rustix_use_experimental_asm, target_arch = \"mips64r6\"), target_arch = \"x86\", all(target_arch = \"x86_64\", target_pointer_width = \"64\"))))"
         },
         {
+          "name": "libc_errno",
+          "package_key": "errno-0.3.13",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": true,
+          "target": "cfg(all(not(windows), any(rustix_use_libc, miri, not(all(target_os = \"linux\", any(target_endian = \"little\", any(target_arch = \"s390x\", target_arch = \"powerpc\")), any(target_arch = \"arm\", all(target_arch = \"aarch64\", target_pointer_width = \"64\"), target_arch = \"riscv64\", all(rustix_use_experimental_asm, target_arch = \"powerpc\"), all(rustix_use_experimental_asm, target_arch = \"powerpc64\"), all(rustix_use_experimental_asm, target_arch = \"s390x\"), all(rustix_use_experimental_asm, target_arch = \"mips\"), all(rustix_use_experimental_asm, target_arch = \"mips32r6\"), all(rustix_use_experimental_asm, target_arch = \"mips64\"), all(rustix_use_experimental_asm, target_arch = \"mips64r6\"), target_arch = \"x86\", all(target_arch = \"x86_64\", target_pointer_width = \"64\")))))))"
+        },
+        {
+          "name": "libc_errno",
+          "package_key": "errno-0.3.13",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": true,
+          "target": "cfg(windows)"
+        },
+        {
           "name": "libc",
           "package_key": "libc-0.2.175",
           "kind": "normal",
@@ -22582,11 +23026,28 @@
           "uses_default_features": false,
           "optional": true,
           "target": "cfg(all(not(rustix_use_libc), not(miri), target_os = \"linux\", any(target_endian = \"little\", any(target_arch = \"s390x\", target_arch = \"powerpc\")), any(target_arch = \"arm\", all(target_arch = \"aarch64\", target_pointer_width = \"64\"), target_arch = \"riscv64\", all(rustix_use_experimental_asm, target_arch = \"powerpc\"), all(rustix_use_experimental_asm, target_arch = \"powerpc64\"), all(rustix_use_experimental_asm, target_arch = \"s390x\"), all(rustix_use_experimental_asm, target_arch = \"mips\"), all(rustix_use_experimental_asm, target_arch = \"mips32r6\"), all(rustix_use_experimental_asm, target_arch = \"mips64\"), all(rustix_use_experimental_asm, target_arch = \"mips64r6\"), target_arch = \"x86\", all(target_arch = \"x86_64\", target_pointer_width = \"64\"))))"
+        },
+        {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": true,
+          "target": "cfg(all(not(windows), any(rustix_use_libc, miri, not(all(target_os = \"linux\", any(target_endian = \"little\", any(target_arch = \"s390x\", target_arch = \"powerpc\")), any(target_arch = \"arm\", all(target_arch = \"aarch64\", target_pointer_width = \"64\"), target_arch = \"riscv64\", all(rustix_use_experimental_asm, target_arch = \"powerpc\"), all(rustix_use_experimental_asm, target_arch = \"powerpc64\"), all(rustix_use_experimental_asm, target_arch = \"s390x\"), all(rustix_use_experimental_asm, target_arch = \"mips\"), all(rustix_use_experimental_asm, target_arch = \"mips32r6\"), all(rustix_use_experimental_asm, target_arch = \"mips64\"), all(rustix_use_experimental_asm, target_arch = \"mips64r6\"), target_arch = \"x86\", all(target_arch = \"x86_64\", target_pointer_width = \"64\")))))))"
         }
       ],
       "build_dependencies": [],
       "crate_renames": {
         "errno": [
+          {
+            "version": "0.3.13",
+            "rename": "libc_errno"
+          },
+          {
+            "version": "0.3.13",
+            "rename": "libc_errno"
+          },
           {
             "version": "0.3.13",
             "rename": "libc_errno"
@@ -27685,6 +28146,15 @@
           "target": "cfg(all(tokio_unstable, target_os = \"linux\"))"
         },
         {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": true,
+          "optional": true,
+          "target": "cfg(unix)"
+        },
+        {
           "name": "mio",
           "package_key": "mio-1.0.4",
           "kind": "normal",
@@ -27692,6 +28162,15 @@
           "uses_default_features": false,
           "optional": true,
           "target": null
+        },
+        {
+          "name": "mio",
+          "package_key": "mio-1.0.4",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": true,
+          "target": "cfg(all(tokio_unstable, target_os = \"linux\"))"
         },
         {
           "name": "pin_project_lite",
@@ -27734,6 +28213,15 @@
           "target": "cfg(all(tokio_unstable, target_os = \"linux\"))"
         },
         {
+          "name": "libc",
+          "package_key": "libc-0.2.175",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": true,
+          "optional": true,
+          "target": "cfg(unix)"
+        },
+        {
           "name": "mio",
           "package_key": "mio-1.0.4",
           "kind": "normal",
@@ -27741,6 +28229,15 @@
           "uses_default_features": false,
           "optional": true,
           "target": null
+        },
+        {
+          "name": "mio",
+          "package_key": "mio-1.0.4",
+          "kind": "normal",
+          "features": [],
+          "uses_default_features": false,
+          "optional": true,
+          "target": "cfg(all(tokio_unstable, target_os = \"linux\"))"
         },
         {
           "name": "pin_project_lite",
